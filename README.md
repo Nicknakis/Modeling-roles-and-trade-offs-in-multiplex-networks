@@ -1,4 +1,4 @@
-# SGAAE
+# MLT
 
 Python 3.8.3 and Pytorch 1.12.1 implementation of the Multiplex Latent Trade-off Model (MLT).
 ## Description
