@@ -6,7 +6,11 @@ A multiplex social network captures multiple types of social relations among the
 
 ## Data Availability
 
-In temrs of data access confidential metadata (as specified by human participant constraints), data can be requested by academic researchers from established institutions (with IRB approval) by filing a request directly to the authors. These data are non-transferable to other investigators, and also are not for commercial use. Data release is subject to provisions in force at Yale University and the Yale Institute for Network Science at the time of release.
+Applying the MLT approach to 176 real-world multiplex networks—comprising social, health, and economic layers—from villages in western Honduras, we find that core social-exchange principles emerge, alongside local, layer-specific, and multiscale communities.
+
+Regarding data access, and in accordance with confidentiality constraints for human participants, academic researchers from established institutions may request the data (with IRB approval) by contacting the authors directly. These data are non-transferable to other investigators and are not for commercial use. Any release is subject to the policies in effect at Yale University and the Yale Institute for Network Science at the time of release.
+
+The provided code, by default, operates on randomly generated networks under a directed multiplex SBM, in order to promote open research and to facilitate application to additional networks.
 
 ## Installation
 
