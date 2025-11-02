@@ -27,9 +27,6 @@ if CUDA:
 else:
     torch.set_default_tensor_type('torch.FloatTensor')
 
-print(device)
-undirected=1
-
 
 
 
@@ -181,18 +178,16 @@ def calculate_nmf_for_layer(layer, n_components):
     return W_+1e-04, H_+1e-04
 
 
-#H,W=calculate_nmf_for_layer(pruned_layers[1],latent_dim)
 
 
 
 
 
-start = timeit.default_timer()
 CUDA = torch.cuda.is_available()
 
 
 
-undirected=1
+
 
   
 
@@ -283,7 +278,7 @@ class LSM(nn.Module,Spectral_clustering_init):
     
     def LSM_likelihood_bias(self,epoch):
         '''
-        Bernoulli log-likelihood ignoring the log(k!) constant
+        Bernoulli log-likelihood
         
         '''
         self.epoch=epoch
