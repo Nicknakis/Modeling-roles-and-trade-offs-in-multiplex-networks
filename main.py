@@ -309,7 +309,7 @@ class LSM(nn.Module,Spectral_clustering_init):
 
 
                 
-                z_pdist1=mat.sum()#(mat-torch.diag(torch.diagonal(mat))).sum()
+                z_pdist1=mat.sum()
 
                 
                 z_pdist2=((self.g[sparse_i_]+self.d[sparse_j_])).sum()
@@ -431,7 +431,6 @@ class LSM(nn.Module,Spectral_clustering_init):
         sigma = F.softplus(self.log_sigma) + 1e-6
         prior_delta = (self.L ** 2) / (2 * sigma ** 2) + torch.log(sigma)
         prior_sigma = torch.log(1 + (sigma ** 2) / (self.gamma_cauchy ** 2))
-        # CRITICAL CHANGE: Normalize explicitly per dyad
         return (prior_delta + prior_sigma / num_dyads)
     
     
@@ -583,16 +582,6 @@ if __name__ == "__main__":
     edges_j_econ_all=out['edges_np'][2][:,1]
    
 
-
-    
-
-
-
-        
-
-   
-
-    #for vil_id in range(len(edges_i_econ_all)):
     for vil_id in range(1):
         
 
