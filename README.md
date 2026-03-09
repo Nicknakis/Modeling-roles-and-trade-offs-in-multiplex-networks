@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ## Reference
 
-[Modeling roles and trade-offs in multiplex networks]((https://arxiv.org/abs/2508.05488)). Nikolaos Nakis, Sune Lehmann, Nicholas A. Christakis, and Morten Mørup, Preprint 25
+[Modeling roles and trade-offs in multiplex networks]((https://arxiv.org/abs/2508.05488)). Nikolaos Nakis, Sune Lehmann, Nicholas A. Christakis, and Morten Mørup, Nature Communications 2026
 
 
 
